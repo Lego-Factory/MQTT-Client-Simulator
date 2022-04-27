@@ -1,0 +1,11 @@
+{
+    "broker_ip" : "localhost",
+    "device_name" : "PC",
+    "topics":
+    {
+        "general_topic": "STD_SYS/general",
+        "setup_topic" : "STD_SYS/setup",
+        "main_topic": "STD_SYS/main"
+    }
+
+}
