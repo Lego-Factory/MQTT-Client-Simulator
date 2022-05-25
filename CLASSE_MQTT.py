@@ -69,6 +69,16 @@ class MQTT_Network():
         self.client.loop_stop()
         print("\nMQTT network stopped")
 
+	def Loop(self):
+        self.client.on_connect = self.on_connect
+        self.client.on_message = self.on_message
+        self.client.on_subscribe = self.on_subscribe
+        #self.client.on_publish = self.on_publish
+        self.client.connect(self.BROKER_IP)
+        print("\nMQTT network started")
+        self.client.loop_forever()
+
+
 
 if __name__ == "__main__":
 

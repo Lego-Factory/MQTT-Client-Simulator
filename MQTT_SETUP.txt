@@ -4,8 +4,7 @@
     "topics":
     {
         "general_topic": "STD_SYS/general",
-        "setup_topic" : "STD_SYS/setup",
-        "main_topic": "STD_SYS/main"
+        "temp_topic": "STD_SYS/temperature"
     }
 
 }
