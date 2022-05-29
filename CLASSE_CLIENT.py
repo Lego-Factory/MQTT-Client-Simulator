@@ -9,13 +9,12 @@ class Client(MQTT_Network):
 		self.topics = self.setup["topics"]
 
 		self.time_msg = 3 #in secondi , serve a cambiare i secondi che intercorrono tra un messaggio e l'altro
-		self.qty_msg = 20 #numero di messaggi di general e main manda il simulatore
+		self.qty_msg = 10 #numero di messaggi di general e main manda il simulatore
 
 	# Topics subscription method 
 	def topics_subscriptions(self):
 		self.client.subscribe(self.topics["general_topic"])
-		self.client.subscribe(self.topics["setup_topic"])
-		self.client.subscribe(self.topics["main_topic"])
+
 
 	# Send test message (YOU CAN DELETE THIS PART)
 	def publish_test_messages(self):
@@ -36,7 +35,7 @@ class Client(MQTT_Network):
 			time.sleep(self.time_msg)
 			#
 
-			#
+			'''
 			payload_main = {
 				"sender_name" : "PC-test",
 				"receiver_name" : "M-test",
@@ -45,7 +44,7 @@ class Client(MQTT_Network):
 
 			self.publish_msg(self.topics["main_topic"], payload_main)
 			time.sleep(self.time_msg)
-			#
+			'''
 
 
 	# Messages logic method

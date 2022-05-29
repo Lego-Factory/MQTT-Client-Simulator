@@ -1,5 +1,5 @@
 {
-    "broker_ip" : "localhost",
+    "broker_ip" : "192.168.0.101",
     "device_name" : "PC",
     "topics":
     {
